@@ -3,8 +3,9 @@
 ## Demo Ansible Playbook to perform patching on RHEL/CentOS Server
 ## By Boma Lawson 06/21/2019
 - name: Perfoming Patch for Linux Servers
-  hosts: localhost
-  become: yes
+  hosts: all
+  become_user: boma
+  become_method: sudo
 # serial: 2
   tasks:
     # purpose of this task to check if application is running or stopped
