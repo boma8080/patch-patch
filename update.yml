@@ -4,7 +4,6 @@
 ## By Boma Lawson 06/21/2019
 - name: Perfoming Patch for Linux Servers
   hosts: all
-  become_user: boma
   become_method: sudo
 # serial: 2
   tasks:
