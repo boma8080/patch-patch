@@ -4,7 +4,7 @@
 ## By Boma Lawson 06/21/2019
 - name: Perfoming Patch for Linux Servers
   hosts: all
-  become_method: sudo
+  become: true
 # serial: 2
   tasks:
     # purpose of this task to check if application is running or stopped
